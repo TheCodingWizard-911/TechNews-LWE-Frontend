@@ -12,10 +12,11 @@ const useStyles = makeStyles({
     display: "flex",
     width: "100%",
     overflow: "auto",
-    padding: "auto",
-    alignSelf: "center",
-    backgroundColor: "lightgreen",
   },
+  listItem: {
+    justifyContent: "center",
+  },
+  socialButton: {},
 });
 const SocialCard = () => {
   const classes = useStyles();
@@ -23,7 +24,7 @@ const SocialCard = () => {
   return (
     <div>
       <List className={classes.list}>
-        <ListItem>
+        <ListItem className={classes.listItem}>
           <IconButton
             edge="start"
             className={classes.socialButton}
@@ -33,7 +34,7 @@ const SocialCard = () => {
             <Insta />
           </IconButton>
         </ListItem>
-        <ListItem>
+        <ListItem className={classes.listItem}>
           <IconButton
             edge="start"
             className={classes.socialButton}
@@ -43,7 +44,7 @@ const SocialCard = () => {
             <YT />
           </IconButton>
         </ListItem>
-        <ListItem>
+        <ListItem className={classes.listItem}>
           <IconButton
             edge="start"
             className={classes.socialButton}

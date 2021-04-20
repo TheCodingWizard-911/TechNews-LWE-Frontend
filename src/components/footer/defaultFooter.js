@@ -8,7 +8,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     padding: theme.spacing(2),
-    backgroundColor: "red",
+    backgroundColor: "skyblue",
+    borderRadius: "0.5em",
   },
 }));
 const DefaultFooter = () => {

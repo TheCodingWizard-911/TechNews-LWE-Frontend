@@ -2,15 +2,16 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
+import { Button } from "@material-ui/core";
 
 const useStyles = makeStyles({
   list: {
     display: "flex",
     width: "100%",
     overflow: "auto",
-    padding: 0,
-    backgroundColor: "lightgreen",
+  },
+  listItem: {
+    justifyContent: "center",
   },
 });
 const LinksCard = () => {
@@ -19,17 +20,17 @@ const LinksCard = () => {
   return (
     <div>
       <List className={classes.list}>
-        <ListItem>
-          <ListItemText primary="Home" />
+        <ListItem className={classes.listItem}>
+          <Button>Home</Button>
         </ListItem>
-        <ListItem>
-          <ListItemText primary="About" />
+        <ListItem className={classes.listItem}>
+          <Button>About</Button>
         </ListItem>
-        <ListItem>
-          <ListItemText primary="Contact" />
+        <ListItem className={classes.listItem}>
+          <Button>Contact</Button>
         </ListItem>
-        <ListItem>
-          <ListItemText primary="Privacy Policy" />
+        <ListItem className={classes.listItem}>
+          <Button>PrivacyPolicy</Button>
         </ListItem>
       </List>
     </div>
